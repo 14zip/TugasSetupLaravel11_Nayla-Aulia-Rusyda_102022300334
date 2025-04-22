@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Daftar Produk</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/products.css') }}">
 </head>
 <body>
     <h1>Daftar Produk</h1>
@@ -25,5 +25,9 @@
             @endforeach
         </tbody>
     </table>
+    <form action="{{ route('logout') }}" method="POST">
+    @csrf
+    <button type="submit">Logout</button>
+</form>
 </body>
 </html>
